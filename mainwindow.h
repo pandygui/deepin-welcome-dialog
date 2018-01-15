@@ -4,6 +4,7 @@
 #include <DMainWindow>
 #include <QVBoxLayout>
 #include "slidebar.h"
+#include "contentwidget.h"
 
 DWIDGET_USE_NAMESPACE
 
@@ -20,6 +21,7 @@ private:
     QVBoxLayout *m_mainLayout;
     QHBoxLayout *m_contentLayout;
     SlideBar *m_slideBar;
+    ContentWidget *m_contentWidget;
 };
 
 #endif // MAINWINDOW_H

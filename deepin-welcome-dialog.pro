@@ -28,8 +28,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    slidebar.cpp
+	slidebar.cpp \
+	contentwidget.cpp
 
 HEADERS += \
         mainwindow.h \
-    slidebar.h
+	slidebar.h \
+	contentwidget.h

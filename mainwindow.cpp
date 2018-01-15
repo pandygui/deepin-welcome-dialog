@@ -7,14 +7,15 @@ MainWindow::MainWindow(QWidget *parent)
       m_mainWidget(new QWidget),
       m_mainLayout(new QVBoxLayout(m_mainWidget)),
       m_contentLayout(new QHBoxLayout),
-      m_slideBar(new SlideBar)
+      m_slideBar(new SlideBar),
+      m_contentWidget(new ContentWidget)
 {
     if (titlebar()) {
         titlebar()->setWindowFlags(Qt::WindowCloseButtonHint);
     }
 
     m_contentLayout->addWidget(m_slideBar);
-    m_contentLayout->addStretch();
+    m_contentLayout->addWidget(m_contentWidget);
     m_mainLayout->setMargin(0);
     m_mainLayout->addLayout(m_contentLayout);
 
