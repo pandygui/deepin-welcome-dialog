@@ -18,6 +18,9 @@ SlideBar::SlideBar(QWidget *parent)
                   "border: 1px solid transparent;"
                   "border-right: 3px solid transparent;"
                   "}"
+                  "#NavButton:hover {"
+                  "background-color: #EDEDEE;"
+                  "}"
                   "#NavButton:checked {"
                   "color: #2CA7F8;"
                   "background-color: #D5EDFE;"
@@ -25,7 +28,7 @@ SlideBar::SlideBar(QWidget *parent)
                   "border-right: 3px solid #2CA7F8;"
                   "}");
 
-    m_layout->setSpacing(5);
+    m_layout->setSpacing(0);
     m_layout->setMargin(0);
 
     setFixedWidth(125);
