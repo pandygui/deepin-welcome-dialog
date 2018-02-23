@@ -24,6 +24,7 @@ ContentFrame::ContentFrame(QWidget *parent)
     : QFrame(parent),
       m_mainLayout(new QStackedLayout(this))
 {
+
 }
 
 ContentFrame::~ContentFrame()
