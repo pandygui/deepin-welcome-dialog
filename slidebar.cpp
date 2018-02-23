@@ -1,4 +1,5 @@
 #include "slidebar.h"
+#include <QPainter>
 
 SlideBar::SlideBar(QWidget *parent)
     : QWidget(parent),
@@ -6,12 +7,13 @@ SlideBar::SlideBar(QWidget *parent)
       m_buttonGroup(new QButtonGroup)
 {
     m_titleList << tr("Introduction") << tr("Desktop mode")
-                << tr("Icon theme") << tr("Window effect")
-                << tr("Support us") << tr("About us");
+                << tr("Icon theme")   << tr("Window effect")
+                << tr("Support us")   << tr("About us");
 
     setStyleSheet("#NavButton {"
                   "border: none;"
                   "text-align: left;"
+                  "font-size: 14px;"
                   "padding-left: 10px;"
                   "border: 1px solid transparent;"
                   "border-right: 3px solid transparent;"
@@ -23,8 +25,10 @@ SlideBar::SlideBar(QWidget *parent)
                   "border-right: 3px solid #2CA7F8;"
                   "}");
 
+    m_layout->setSpacing(5);
     m_layout->setMargin(0);
-    setFixedWidth(120);
+
+    setFixedWidth(125);
     initButton();
 
     connect(m_buttonGroup, SIGNAL(buttonClicked(int)), this, SIGNAL(currentIndexChanged(int)));

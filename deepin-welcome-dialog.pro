@@ -29,9 +29,9 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
 	slidebar.cpp \
-	contentwidget.cpp
+	contentframe.cpp
 
 HEADERS += \
         mainwindow.h \
 	slidebar.h \
-	contentwidget.h
+	contentframe.h
