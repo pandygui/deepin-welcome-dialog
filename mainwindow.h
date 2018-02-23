@@ -5,6 +5,7 @@
 #include <QVBoxLayout>
 #include "slidebar.h"
 #include "contentframe.h"
+#include "dlinkbutton.h"
 
 DWIDGET_USE_NAMESPACE
 
@@ -20,6 +21,7 @@ private:
     QWidget *m_mainWidget;
     QVBoxLayout *m_mainLayout;
     QHBoxLayout *m_contentLayout;
+    QHBoxLayout *m_bottomLayout;
     SlideBar *m_slideBar;
     ContentFrame *m_contentFrame;
 };

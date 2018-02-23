@@ -28,7 +28,7 @@ SlideBar::SlideBar(QWidget *parent)
                   "border-right: 3px solid #2CA7F8;"
                   "}");
 
-    m_layout->setSpacing(0);
+    m_layout->setSpacing(5);
     m_layout->setMargin(0);
 
     setFixedWidth(125);
